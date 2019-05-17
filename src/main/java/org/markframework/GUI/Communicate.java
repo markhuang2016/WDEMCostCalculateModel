@@ -75,83 +75,129 @@ public class Communicate extends JFrame {
         }
     }
     
+    private boolean flag = true;
     
     private void StartActionPerformed(ActionEvent e) {
+        flag = true;
+        message.setText("");
         
-        // 获取传入参数并进行有效性验证
+        // 获取传入参数
+        
         // 材料选择
         String material = (String) marterialBox.getSelectedItem();
-        if (!ParamValidUtil.validMaterial(material)) {
-            message.setText("请选择下拉框中支持的材料");
-        }
-        
         // 要求粗糙度
         String requestedRaText = requestedRa.getText();
-        if(!ParamValidUtil.validRa(requestedRaText)){
-            message.setText("粗糙度要求不合法，请在2.0至6.0之间选择，最小精度0.1");
-        }
+        // 空走时间
+        String emptyWalkTimeText = emptyWalkTime.getText();
         
         // 工件厚度
         String partHeightText = partHeight.getText();
-        if(!ParamValidUtil.validPartSize(partHeightText)){
-            message.setText("工件厚度不合法，请在1至500之间选择，最小精度1");
-        }
         
         // 工件长度
         String partLengthText = partLength.getText();
-        if(!ParamValidUtil.validPartSize(partLengthText)){
-            message.setText("工件长度不合法，请输入大于0的整数");
-        }
-        
         // 待机时间
         String preparedTimeText = preparedTime.getText();
-        if(!ParamValidUtil.validTime(preparedTimeText)){
-            message.setText("待机时间不合法，请输入大于0的整数");
+        try {
+            // 进行有效性验证
+            if (!ParamValidUtil.validMaterial(material)) {
+                message.setText("请选择下拉框中支持的材料");
+                flag = false;
+            }
+            
+            if (!ParamValidUtil.validRa(requestedRaText)) {
+                message.setText("粗糙度要求不合法，请在2.0至6.0之间选择，最小精度0.1");
+                flag = false;
+            }
+            if (!ParamValidUtil.validPartHeight(partHeightText)) {
+                message.setText("工件厚度不合法，请在1至500之间选择，最小精度1");
+                flag = false;
+            }
+            if (!ParamValidUtil.validPartLength(partLengthText)) {
+                message.setText("工件长度不合法，请输入大于0的整数");
+                flag = false;
+            }
+            
+            if (!ParamValidUtil.validTime(preparedTimeText)) {
+                message.setText("待机时间不合法，请输入大于0的整数");
+                flag = false;
+            }
+            
+            
+            if (!ParamValidUtil.validTime(emptyWalkTimeText)) {
+                message.setText("空走时间不合法，请输入大于0的整数");
+                flag = false;
+                
+            }
+            
+        } catch (Exception e1) {
+            message.setText("请传入正确完整的参数");
+            flag = false;
         }
         
-        // 空走时间
-        String emptyWalkTimeText = emptyWalkTime.getText();
-        if(!ParamValidUtil.validTime(emptyWalkTimeText)){
-            message.setText("空走时间不合法，请输入大于0的整数");
+        if (flag) {
+            CalculateInput calculateInput = new CalculateInput();
+            calculateInput.setMaterial(material);
+            calculateInput.setRequestRa(requestedRaText);
+            calculateInput.setLength(partLengthText);
+            calculateInput.setHeight(partHeightText);
+            calculateInput.setPreparedTime(preparedTimeText);
+            calculateInput.setEmptyWalkTime(emptyWalkTimeText);
+            
+            // 进行计算获得结果
+            CalculateResult calculate = CostCalculateUtil.calculate(calculateInput);
+            
+            
+            // 显示计算结果
+            
+            // 预期粗糙度
+            processedRa.setText(calculate.getProcessdRa());
+            
+            // 总加工时间
+            totalProcessedTime.setText(calculate.getTotalTime());
+            
+            // 脉冲加工时间
+            pulseProcessedTime.setText(calculate.getPulseTProcessTime());
+            
+            // 总加工能耗
+            totalProcessEnergy.setText(calculate.getTotalEenergy());
+            
+            // 脉冲加工能耗
+            pulseProcessEnergy.setText(calculate.getPulseEnergy());
+            
+            // 总成本
+            totalCost.setText(calculate.getTotalCost());
+            
+            // 时间成本
+            timeCost.setText(calculate.getTimeCost());
+            
+            // 能源成本
+            energyCost.setText(calculate.getEnergyCost());
+        } else {
+            // 预期粗糙度
+            processedRa.setText("");
+            
+            // 总加工时间
+            totalProcessedTime.setText("");
+            
+            // 脉冲加工时间
+            pulseProcessedTime.setText("");
+            
+            // 总加工能耗
+            totalProcessEnergy.setText("");
+            
+            // 脉冲加工能耗
+            pulseProcessEnergy.setText("");
+            
+            // 总成本
+            totalCost.setText("");
+            
+            // 时间成本
+            timeCost.setText("");
+            
+            // 能源成本
+            energyCost.setText("");
         }
         
-        CalculateInput calculateInput = new CalculateInput();
-        calculateInput.setMaterial(material);
-        calculateInput.setRequestRa(requestedRaText);
-        calculateInput.setLength(partLengthText);
-        calculateInput.setHeight(partHeightText);
-        calculateInput.setPreparedTime(preparedTimeText);
-        calculateInput.setEmptyWalkTime(emptyWalkTimeText);
-        
-        // 进行计算获得结果
-        CalculateResult calculate = CostCalculateUtil.calculate(calculateInput);
-        
-    
-        // 显示计算结果
-        
-        // 预期粗糙度
-        processedRa.setText(calculate.getProcessdRa());
-        
-        // 总加工时间
-        totalProcessedTime.setText(calculate.getTotalTime());
-        
-        // 脉冲加工时间
-        pulseProcessedTime.setText(calculate.getPulseTProcessTime());
-        
-        // 总加工能耗
-        totalProcessEnergy.setText(calculate.getTotalEenergy());
-        
-        // 脉冲加工能耗
-        pulseProcessEnergy.setText(calculate.getPulseEnergy());
-        
-        // 总成本
-        totalCost.setText(calculate.getTotalCost());
-        
-        // 时间成本
-        timeCost.setText(calculate.getTimeCost());
-        
-        // 能源成本
-        energyCost.setText(calculate.getEnergyCost());
         
     }
     
@@ -234,81 +280,86 @@ public class Communicate extends JFrame {
         energyCost = new JTextField();
         label8 = new JLabel();
         timeCost = new JTextField();
-
+        
         //======== 成本计算模型 ========
         {
             Container 成本计算模型ContentPane = 成本计算模型.getContentPane();
             成本计算模型ContentPane.setLayout(new MigLayout(
-                "hidemode 3",
-                // columns
-                "[fill]",
-                // rows
-                "[]" +
-                "[]" +
-                "[]"));
-
-            //======== 输入 ========
-            {
-
-                // JFormDesigner evaluation mark
-                输入.setBorder(new javax.swing.border.CompoundBorder(
-                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                        "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                        javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                        java.awt.Color.red), 输入.getBorder())); 输入.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
-
-                输入.setLayout(new MigLayout(
                     "hidemode 3",
                     // columns
-                    "[150:150,fill]" +
-                    "[100:100,fill]" +
-                    "[100:100,fill]" +
-                    "[150:150,fill]" +
-                    "[100:100,fill]",
+                    "[fill]",
                     // rows
                     "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]"));
-
+                            "[]" +
+                            "[]"));
+            
+            //======== 输入 ========
+            {
+                
+                // JFormDesigner evaluation mark
+                输入.setBorder(new javax.swing.border.CompoundBorder(
+                        new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                                "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                                javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                                java.awt.Color.red), 输入.getBorder()));
+                输入.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+                    public void propertyChange(java.beans.PropertyChangeEvent e) {
+                        if ("border".equals(e.getPropertyName())) throw new RuntimeException();
+                    }
+                });
+                
+                输入.setLayout(new MigLayout(
+                        "hidemode 3",
+                        // columns
+                        "[150:150,fill]" +
+                                "[100:100,fill]" +
+                                "[100:100,fill]" +
+                                "[150:150,fill]" +
+                                "[100:100,fill]",
+                        // rows
+                        "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]"));
+                
                 //---- label1 ----
                 label1.setText("\u8ba1\u7b97\u8f93\u5165");
                 label1.setHorizontalAlignment(SwingConstants.CENTER);
                 输入.add(label1, "cell 2 0");
-
+                
                 //---- PartLength ----
                 PartLength.setText("\u5de5\u4ef6\u6750\u6599");
                 输入.add(PartLength, "cell 0 1");
                 输入.add(marterialBox, "cell 1 1");
-
+                
                 //---- label3 ----
                 label3.setText("\u8868\u9762\u7c97\u7cd9\u5ea6\u8981\u6c42\uff08um\uff09");
                 输入.add(label3, "cell 3 1");
                 输入.add(requestedRa, "cell 4 1");
-
+                
                 //---- label2 ----
                 label2.setText("\u5de5\u4ef6\u52a0\u5de5\u957f\u5ea6\uff08mm\uff09");
                 输入.add(label2, "cell 0 2");
                 输入.add(partLength, "cell 1 2");
-
+                
                 //---- PartLength2 ----
                 PartLength2.setText("\u5de5\u4ef6\u539a\u5ea6\uff08mm\uff09");
                 输入.add(PartLength2, "cell 3 2");
                 输入.add(partHeight, "cell 4 2");
-
+                
                 //---- label9 ----
                 label9.setText("\u5f85\u673a\u65f6\u95f4\uff08s\uff09");
                 输入.add(label9, "cell 0 3");
                 输入.add(preparedTime, "cell 1 3");
-
+                
                 //---- PartLength3 ----
                 PartLength3.setText("\u7a7a\u8d70\u65f6\u95f4\uff08s\uff09");
                 输入.add(PartLength3, "cell 3 3");
                 输入.add(emptyWalkTime, "cell 4 3");
-
+                
                 //---- Start ----
                 Start.setText("\u5f00\u59cb\u8ba1\u7b97");
                 Start.addActionListener(new ActionListener() {
@@ -321,65 +372,65 @@ public class Communicate extends JFrame {
                 输入.add(message, "cell 2 5");
             }
             成本计算模型ContentPane.add(输入, "cell 0 0 1 2");
-
+            
             //======== 输出 ========
             {
                 输出.setLayout(new MigLayout(
-                    "hidemode 3",
-                    // columns
-                    "[150:150,fill]" +
-                    "[100:100,fill]" +
-                    "[100:100,fill]" +
-                    "[150:150,fill]" +
-                    "[100:100,fill]",
-                    // rows
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]"));
-
+                        "hidemode 3",
+                        // columns
+                        "[150:150,fill]" +
+                                "[100:100,fill]" +
+                                "[100:100,fill]" +
+                                "[150:150,fill]" +
+                                "[100:100,fill]",
+                        // rows
+                        "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]"));
+                
                 //---- label13 ----
                 label13.setText("\u8ba1\u7b97\u7ed3\u679c");
                 label13.setHorizontalAlignment(SwingConstants.CENTER);
                 输出.add(label13, "cell 2 0");
-
+                
                 //---- label4 ----
                 label4.setText("\u5de5\u4ef6\u52a0\u5de5\u8d28\u91cf\uff08um\uff09");
                 输出.add(label4, "cell 0 1");
                 输出.add(processedRa, "cell 1 1");
-
+                
                 //---- label5 ----
                 label5.setText("\u603b\u52a0\u5de5\u65f6\u95f4\uff08s\uff09");
                 输出.add(label5, "cell 0 2");
                 输出.add(totalProcessedTime, "cell 1 2");
-
+                
                 //---- label6 ----
                 label6.setText("\u8109\u51b2\u52a0\u5de5\u65f6\u95f4\uff08s\uff09");
                 输出.add(label6, "cell 3 2");
                 输出.add(pulseProcessedTime, "cell 4 2");
-
+                
                 //---- label10 ----
                 label10.setText("\u603b\u52a0\u5de5\u80fd\u8017\uff08J\uff09");
                 输出.add(label10, "cell 0 3");
                 输出.add(totalProcessEnergy, "cell 1 3");
-
+                
                 //---- label12 ----
                 label12.setText("\u8109\u51b2\u5207\u5272\u80fd\u8017\uff08J\uff09");
                 输出.add(label12, "cell 3 3");
                 输出.add(pulseProcessEnergy, "cell 4 3");
-
+                
                 //---- label7 ----
                 label7.setText("\u603b\u52a0\u5de5\u6210\u672c\uff08\u5143\uff09");
                 输出.add(label7, "cell 0 4");
                 输出.add(totalCost, "cell 1 4");
-
+                
                 //---- label11 ----
                 label11.setText("\u80fd\u6e90\u6210\u672c\uff08\u5143\uff09");
                 输出.add(label11, "cell 0 5");
                 输出.add(energyCost, "cell 1 5");
-
+                
                 //---- label8 ----
                 label8.setText("\u65f6\u95f4\u6210\u672c\uff08\u5143\uff09");
                 输出.add(label8, "cell 3 5");

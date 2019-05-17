@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ae5382c-f596-4112-ba30-b702e98d8222" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/markframework/constant/ParamConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/markframework/constant/ParamConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/markframework/util/CostCalculateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/markframework/util/CostCalculateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,31 +32,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="8" />
+          <entry key="class" value="11" />
           <entry key="form" value="2" />
-          <entry key="java" value="51" />
-          <entry key="jfd" value="14" />
+          <entry key="java" value="56" />
+          <entry key="jfd" value="15" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="8" />
+          <entry key="CLASS" value="11" />
           <entry key="GUI_DESIGNER_FORM" value="2" />
-          <entry key="JAVA" value="51" />
-          <entry key="JFormDesigner_form" value="14" />
+          <entry key="JAVA" value="56" />
+          <entry key="JFormDesigner_form" value="15" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="2999" />
+          <entry key="java" value="3947" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2999" />
+          <entry key="JAVA" value="3947" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -70,20 +64,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
+            <state relative-caret-position="-482">
+              <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
               <folding>
-                <marker date="1558071921958" expanded="true" signature="5417:6742" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-                <marker date="1558071921958" expanded="true" signature="6797:14395" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1558103979433" expanded="true" signature="6568:7893" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <marker date="1558103979433" expanded="true" signature="7948:16456" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/jfd-loader-src.zip!/com/jformdesigner/runtime/FormCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="1754" selection-start-line="1754" selection-end-line="1754" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/Starter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -97,8 +100,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd">
-          <provider selected="true" editor-type-id="JFormDesigner" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="940">
+              <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -107,8 +131,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>between</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>isNotTimes</replace>
+      <replace>isNotBetween</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,13 +161,14 @@
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/Starter.java" />
         <option value="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.java" />
         <option value="$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.jfd" />
-        <option value="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd" />
-        <option value="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/CalculateInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java" />
       </list>
     </option>
@@ -263,24 +298,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="markframework" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-              <item name="Pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,7 +364,10 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/admin/IdeaProjects/WDEMCostCalculateModel/src/main/java/org/markframework/GUI/LoaderExample.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558072205411" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558104208575" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -356,6 +376,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.markframework.util" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target/classes/org/markframework/GUI" />
       <recent name="$PROJECT_DIR$/src/main/java/org/markframework/GUI" />
@@ -375,32 +401,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Starter">
-    <configuration name="Communicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.markframework.GUI.Communicate" />
-      <module name="WDEMCostCalculateModel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.markframework.GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.markframework.GUI.LoaderExample" />
-      <module name="WDEMCostCalculateModel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.markframework.GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.markframework.Starter" />
       <module name="WDEMCostCalculateModel" />
@@ -414,25 +414,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tets" />
+    <configuration name="ParamValidUtilTest.validPartHeight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WDEMCostCalculateModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.markframework.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.markframework.util" />
+      <option name="MAIN_CLASS_NAME" value="org.markframework.util.ParamValidUtilTest" />
+      <option name="METHOD_NAME" value="validPartHeight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamValidUtilTest.validPartLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WDEMCostCalculateModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.markframework.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.markframework.util" />
+      <option name="MAIN_CLASS_NAME" value="org.markframework.util.ParamValidUtilTest" />
+      <option name="METHOD_NAME" value="validPartLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamValidUtilTest.validRa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WDEMCostCalculateModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.markframework.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.markframework.util" />
+      <option name="MAIN_CLASS_NAME" value="org.markframework.util.ParamValidUtilTest" />
+      <option name="METHOD_NAME" value="validRa" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamValidUtilTest.validTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WDEMCostCalculateModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.markframework.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.markframework.util" />
+      <option name="MAIN_CLASS_NAME" value="org.markframework.util.ParamValidUtilTest" />
+      <option name="METHOD_NAME" value="validTime" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.tets" />
       <item itemvalue="Application.Starter" />
-      <item itemvalue="Application.Communicate" />
-      <item itemvalue="Application.LoaderExample" />
+      <item itemvalue="JUnit.ParamValidUtilTest.validRa" />
+      <item itemvalue="JUnit.ParamValidUtilTest.validTime" />
+      <item itemvalue="JUnit.ParamValidUtilTest.validPartHeight" />
+      <item itemvalue="JUnit.ParamValidUtilTest.validPartLength" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Starter" />
-        <item itemvalue="Application.Communicate" />
-        <item itemvalue="Application.LoaderExample" />
-        <item itemvalue="Application.tets" />
+        <item itemvalue="JUnit.ParamValidUtilTest.validPartLength" />
+        <item itemvalue="JUnit.ParamValidUtilTest.validPartHeight" />
+        <item itemvalue="JUnit.ParamValidUtilTest.validTime" />
+        <item itemvalue="JUnit.ParamValidUtilTest.validRa" />
       </list>
     </recent_temporary>
   </component>
@@ -450,12 +509,44 @@
       <workItem from="1557736801253" duration="2750000" />
       <workItem from="1557826626090" duration="367000" />
       <workItem from="1557827035095" duration="29395000" />
-      <workItem from="1558063251488" duration="4069000" />
+      <workItem from="1558063251488" duration="12393000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ParamValidUtilTest_validTime - 2019.05.17 at 22h 17m 51s.xml">
+      <configuration name="ParamValidUtilTest.validTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validTime - 2019.05.17 at 22h 18m 56s.xml">
+      <configuration name="ParamValidUtilTest.validTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validTime - 2019.05.17 at 22h 19m 31s.xml">
+      <configuration name="ParamValidUtilTest.validTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validTime - 2019.05.17 at 22h 19m 41s.xml">
+      <configuration name="ParamValidUtilTest.validTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validPartHeight - 2019.05.17 at 22h 22m 06s.xml">
+      <configuration name="ParamValidUtilTest.validPartHeight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validPartHeight - 2019.05.17 at 22h 22m 29s.xml">
+      <configuration name="ParamValidUtilTest.validPartHeight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validPartHeight - 2019.05.17 at 22h 23m 07s.xml">
+      <configuration name="ParamValidUtilTest.validPartHeight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validPartHeight - 2019.05.17 at 22h 23m 29s.xml">
+      <configuration name="ParamValidUtilTest.validPartHeight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validPartHeight - 2019.05.17 at 22h 23m 51s.xml">
+      <configuration name="ParamValidUtilTest.validPartHeight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParamValidUtilTest_validPartLength - 2019.05.17 at 22h 24m 26s.xml">
+      <configuration name="ParamValidUtilTest.validPartLength" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38445000" />
+    <option name="totallyTimeSpent" value="46769000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,6 +591,37 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25783134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="JFormDesigner Error Log" order="12" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -511,10 +633,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java</url>
-          <line>132</line>
+          <url>file://$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java</url>
+          <line>51</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -571,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="160" column="28" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jfd-loader-src.zip!/com/jformdesigner/runtime/FormCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="458" selection-start-line="458" selection-end-line="458" />
         </state>
       </provider>
     </entry>
@@ -680,9 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
@@ -746,43 +858,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+        <state relative-caret-position="388">
+          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
+        <state relative-caret-position="156">
+          <caret line="306" selection-start-line="306" selection-end-line="306" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
           <folding>
-            <marker date="1558071921958" expanded="true" signature="5417:6742" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-            <marker date="1558071921958" expanded="true" signature="6797:14395" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -794,6 +924,24 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#598#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jfd-loader-src.zip!/com/jformdesigner/runtime/FormCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1754" selection-start-line="1754" selection-end-line="1754" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-482">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <marker date="1558103979433" expanded="true" signature="6568:7893" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1558103979433" expanded="true" signature="7948:16456" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
