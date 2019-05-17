@@ -35,7 +35,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label3"
-					"text": "表面粗糙度要求(um)"
+					"text": "表面粗糙度要求（um）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 3 1"
 				} )
@@ -46,7 +46,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label2"
-					"text": "工件加工长度(mm)"
+					"text": "工件加工长度（mm）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 2"
 				} )
@@ -57,7 +57,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "PartLength2"
-					"text": "工件厚度(mm)"
+					"text": "工件厚度（mm）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 3 2"
 				} )
@@ -68,7 +68,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label9"
-					"text": "待机时间(s)"
+					"text": "待机时间（s）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 3"
 				} )
@@ -79,7 +79,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "PartLength3"
-					"text": "空走时间(s)"
+					"text": "空走时间（s）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 3 3"
 				} )
@@ -118,7 +118,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label4"
-					"text": "工件加工质量(um)"
+					"text": "工件加工质量（um）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 1"
 				} )
@@ -129,7 +129,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label5"
-					"text": "总加工时间(s)"
+					"text": "总加工时间（s）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 2"
 				} )
@@ -140,7 +140,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label6"
-					"text": "脉冲加工时间(s)"
+					"text": "脉冲加工时间（s）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 3 2"
 				} )
@@ -151,7 +151,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label10"
-					"text": "总加工能耗(J)"
+					"text": "总加工能耗（J）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 3"
 				} )
@@ -162,7 +162,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label12"
-					"text": "脉冲切割能耗(J)"
+					"text": "脉冲切割能耗（J）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 3 3"
 				} )
@@ -173,7 +173,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label7"
-					"text": "总加工成本(元)"
+					"text": "总加工成本（元）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 4"
 				} )
@@ -184,7 +184,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label11"
-					"text": "能源成本(元)"
+					"text": "能源成本（元）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 0 5"
 				} )
@@ -195,7 +195,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label8"
-					"text": "时间成本(元)"
+					"text": "时间成本（元）"
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 3 5"
 				} )
