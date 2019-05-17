@@ -90,4 +90,8 @@ public class ParamValidUtil {
         return true;
     }
     
+    public static boolean validIp() {
+        //TODO
+        return false;
+    }
 }

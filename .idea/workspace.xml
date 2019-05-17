@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ae5382c-f596-4112-ba30-b702e98d8222" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamCaluculateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/markframework/util/CostCalculateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/markframework/util/CostCalculateUtil.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +35,8 @@
         <counts>
           <entry key="class" value="11" />
           <entry key="form" value="2" />
-          <entry key="java" value="56" />
-          <entry key="jfd" value="15" />
+          <entry key="java" value="65" />
+          <entry key="jfd" value="16" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -43,20 +44,20 @@
         <counts>
           <entry key="CLASS" value="11" />
           <entry key="GUI_DESIGNER_FORM" value="2" />
-          <entry key="JAVA" value="56" />
-          <entry key="JFormDesigner_form" value="15" />
+          <entry key="JAVA" value="65" />
+          <entry key="JFormDesigner_form" value="16" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="3947" />
+          <entry key="java" value="4877" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3947" />
+          <entry key="JAVA" value="4877" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -65,23 +66,92 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-482">
-              <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+            <state relative-caret-position="386">
+              <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
               <folding>
-                <marker date="1558103979433" expanded="true" signature="6568:7893" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-                <marker date="1558103979433" expanded="true" signature="7948:16456" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/jfd-loader-src.zip!/com/jformdesigner/runtime/FormCreator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/PowerConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="1754" selection-start-line="1754" selection-end-line="1754" />
+            <state relative-caret-position="210">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd">
+          <provider selected="true" editor-type-id="JFormDesigner" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/TimeConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/EnergyCalculateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamCaluculateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -99,39 +169,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/EnergyCalculateUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/tets.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/GUI/CommunicateForm.form" />
@@ -164,12 +207,14 @@
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/CalculateInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd" />
-        <option value="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/markframework/util/ParamValidUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/ParamCaluculateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java" />
       </list>
     </option>
   </component>
@@ -298,6 +343,33 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="markframework" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="markframework" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="markframework" type="462c0819:PsiDirectoryNode" />
+              <item name="Pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="markframework" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,7 +436,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/admin/IdeaProjects/WDEMCostCalculateModel/src/main/java/org/markframework/GUI/LoaderExample.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558104208575" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558107897025" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -377,6 +449,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.markframework.util" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="org.markframework.util" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -509,7 +584,7 @@
       <workItem from="1557736801253" duration="2750000" />
       <workItem from="1557826626090" duration="367000" />
       <workItem from="1557827035095" duration="29395000" />
-      <workItem from="1558063251488" duration="12393000" />
+      <workItem from="1558063251488" duration="15930000" />
     </task>
     <servers />
   </component>
@@ -546,7 +621,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46769000" />
+    <option name="totallyTimeSpent" value="50306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,9 +634,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -570,8 +644,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25783134" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25783134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
@@ -643,13 +717,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tets.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/CommunicateInterface.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,20 +727,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/CommunicateForm.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/CommunicateForm.form" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/PowerConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/TimeConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jfd-loader.jar!/com/jformdesigner/runtime/FormCreator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -788,13 +841,6 @@
     <entry file="file://$PROJECT_DIR$/target/classes/org/markframework/Starter.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/EnergyCalculateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/Pojo/CalculateResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
@@ -848,20 +894,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/org/markframework/GUI/Communicate.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd">
       <provider selected="true" editor-type-id="JFormDesigner" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
@@ -878,32 +911,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="306" selection-start-line="306" selection-end-line="306" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,6 +925,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jfd-loader-src.zip!/com/jformdesigner/runtime/FormCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1754" selection-start-line="1754" selection-end-line="1754" />
         </state>
       </provider>
     </entry>
@@ -928,20 +946,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jfd-loader-src.zip!/com/jformdesigner/runtime/FormCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="1754" selection-start-line="1754" selection-end-line="1754" />
+        <state relative-caret-position="-46">
+          <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+          <folding>
+            <marker date="1558104208637" expanded="true" signature="6754:8079" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1558104208637" expanded="true" signature="8134:16642" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/PowerConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/TimeConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/EnergyCalculateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamValidUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
           <folding>
-            <marker date="1558103979433" expanded="true" signature="6568:7893" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-            <marker date="1558103979433" expanded="true" signature="7948:16456" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/ParamCaluculateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/TimeCalculateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/constant/ParamConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

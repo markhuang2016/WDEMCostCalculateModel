@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class ParamConstant {
     
+    public static final BigDecimal zero = new BigDecimal("0");
+    
     /**
      * 脉宽最大值（us）
      */
@@ -84,6 +86,10 @@ public class ParamConstant {
      * 时间最小变化量（s）
      */
     public static final BigDecimal MIN_TIME_CHANGE =  new BigDecimal("1");
+    /**
+     * 脉宽最大值（mm）
+     */
+    public static final BigDecimal WIRE_D =  new BigDecimal("0.18");
     /**
      * 支持加工的材料
      */
