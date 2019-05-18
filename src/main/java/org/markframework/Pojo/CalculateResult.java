@@ -16,11 +16,15 @@ public class CalculateResult {
     private String totalCost;
     private String timeCost;
     private String energyCost;
+    private String ton;
+    private String toff;
+    private String ip;
+    
     
     public CalculateResult() {
     }
     
-    public CalculateResult(String processdRa, String totalTime, String pulseTProcessTime, String totalEenergy, String pulseEnergy, String totalCost, String timeCost, String energyCost) {
+    public CalculateResult(String processdRa, String totalTime, String pulseTProcessTime, String totalEenergy, String pulseEnergy, String totalCost, String timeCost, String energyCost, String ton, String toff, String ip) {
         this.processdRa = processdRa;
         this.totalTime = totalTime;
         this.pulseTProcessTime = pulseTProcessTime;
@@ -29,6 +33,33 @@ public class CalculateResult {
         this.totalCost = totalCost;
         this.timeCost = timeCost;
         this.energyCost = energyCost;
+        this.ton = ton;
+        this.toff = toff;
+        this.ip = ip;
+    }
+    
+    public String getTon() {
+        return ton;
+    }
+    
+    public void setTon(String ton) {
+        this.ton = ton;
+    }
+    
+    public String getToff() {
+        return toff;
+    }
+    
+    public void setToff(String toff) {
+        this.toff = toff;
+    }
+    
+    public String getIp() {
+        return ip;
+    }
+    
+    public void setIp(String ip) {
+        this.ip = ip;
     }
     
     public String getProcessdRa() {
@@ -106,6 +137,9 @@ public class CalculateResult {
                 ", totalCost='" + totalCost + '\'' +
                 ", timeCost='" + timeCost + '\'' +
                 ", energyCost='" + energyCost + '\'' +
+                ", ton='" + ton + '\'' +
+                ", toff='" + toff + '\'' +
+                ", ip='" + ip + '\'' +
                 '}';
     }
 }

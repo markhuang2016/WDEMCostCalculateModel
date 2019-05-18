@@ -57,6 +57,10 @@ public class Communicate extends JFrame {
             totalCost = formCreator.getTextField("totalCost");
             energyCost = formCreator.getTextField("energyCost");
             timeCost = formCreator.getTextField("timeCost");
+            ton = formCreator.getTextField("ton");
+            toff = formCreator.getTextField("toff");
+            ip = formCreator.getTextField("ip");
+            
             message = formCreator.getLabel("message");
             
             
@@ -172,6 +176,16 @@ public class Communicate extends JFrame {
             
             // 能源成本
             energyCost.setText(calculate.getEnergyCost());
+            
+            // 脉宽
+            ton.setText(calculate.getTon());
+            
+            // 脉间距
+            toff.setText(calculate.getToff());
+            
+            // 峰值电流
+            ip.setText(calculate.getIp());
+            
         } else {
             // 预期粗糙度
             processedRa.setText("");
@@ -196,6 +210,15 @@ public class Communicate extends JFrame {
             
             // 能源成本
             energyCost.setText("");
+    
+            // 脉宽
+            ton.setText("");
+    
+            // 脉间距
+            toff.setText("");
+    
+            // 峰值电流
+            ip.setText("");
         }
         
         
@@ -239,6 +262,12 @@ public class Communicate extends JFrame {
     private JTextField energyCost;
     private JLabel label8;
     private JTextField timeCost;
+    private JLabel label14;
+    private JTextField ton;
+    private JLabel label15;
+    private JTextField toff;
+    private JLabel label16;
+    private JTextField ip;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
     
     
@@ -280,6 +309,12 @@ public class Communicate extends JFrame {
         energyCost = new JTextField();
         label8 = new JLabel();
         timeCost = new JTextField();
+        label14 = new JLabel();
+        ton = new JTextField();
+        label15 = new JLabel();
+        toff = new JTextField();
+        label16 = new JLabel();
+        ip = new JTextField();
         
         //======== 成本计算模型 ========
         {
@@ -389,6 +424,10 @@ public class Communicate extends JFrame {
                                 "[]" +
                                 "[]" +
                                 "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]" +
                                 "[]"));
                 
                 //---- label13 ----
@@ -435,6 +474,21 @@ public class Communicate extends JFrame {
                 label8.setText("\u65f6\u95f4\u6210\u672c\uff08\u5143\uff09");
                 输出.add(label8, "cell 3 5");
                 输出.add(timeCost, "cell 4 5");
+                
+                //---- label14 ----
+                label14.setText("\u63a8\u8350\u8109\u5bbd\uff08us\uff09");
+                输出.add(label14, "cell 0 6");
+                输出.add(ton, "cell 1 6");
+                
+                //---- label15 ----
+                label15.setText("\u63a8\u8350\u8109\u95f4\u8ddd\uff08us\uff09");
+                输出.add(label15, "cell 3 6");
+                输出.add(toff, "cell 4 6");
+                
+                //---- label16 ----
+                label16.setText("\u63a8\u8350\u5cf0\u503c\u7535\u6d41\uff08A\uff09");
+                输出.add(label16, "cell 0 7");
+                输出.add(ip, "cell 1 7");
             }
             成本计算模型ContentPane.add(输出, "cell 0 2");
             成本计算模型.pack();

@@ -1,6 +1,8 @@
 package org.markframework.constant;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,10 @@ import java.util.List;
 public class ParamConstant {
     
     public static final BigDecimal zero = new BigDecimal("0");
+    /**
+     * 计算精度
+     */
+    public static final MathContext mathContext = new MathContext(5, RoundingMode.HALF_DOWN);
     
     /**
      * 脉宽最大值（us）

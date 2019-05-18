@@ -16,10 +16,10 @@ public class ParamValidUtil {
     
     public static boolean validRa(String requestedRaText) {
         BigDecimal ra = new BigDecimal(requestedRaText);
-        if (isNotBetween(ra,ParamConstant.MAX_RA,ParamConstant.MIN_RA)) {
+        if (isNotBetween(ra, ParamConstant.MAX_RA, ParamConstant.MIN_RA)) {
             return false;
         }
-        if (isNotTimes(ra,ParamConstant.MIN_RA_CHANGE)) {
+        if (isNotTimes(ra, ParamConstant.MIN_RA_CHANGE)) {
             return false;
         }
         return true;
@@ -27,10 +27,10 @@ public class ParamValidUtil {
     
     public static boolean validTime(String timeText) {
         BigDecimal bigDecimal = new BigDecimal(timeText);
-        if(isNotTimes(bigDecimal,ParamConstant.MIN_TIME_CHANGE)){
+        if (isNotTimes(bigDecimal, ParamConstant.MIN_TIME_CHANGE)) {
             return false;
         }
-        if(isNotPositive(bigDecimal)){
+        if (isNotPositive(bigDecimal)) {
             return false;
         }
         return true;
@@ -42,10 +42,10 @@ public class ParamValidUtil {
     
     public static boolean validPartHeight(String partHeightText) {
         BigDecimal bigDecimal = new BigDecimal(partHeightText);
-        if (isNotBetween(bigDecimal,ParamConstant.PART_MAX_HEIGHT,ParamConstant.PART_MIN_HEIGHT)) {
+        if (isNotBetween(bigDecimal, ParamConstant.PART_MAX_HEIGHT, ParamConstant.PART_MIN_HEIGHT)) {
             return false;
         }
-        if (isNotTimes(bigDecimal,ParamConstant.MIN_PART_SIZE_CHANGE)) {
+        if (isNotTimes(bigDecimal, ParamConstant.MIN_PART_SIZE_CHANGE)) {
             return false;
         }
         return true;
@@ -56,14 +56,24 @@ public class ParamValidUtil {
         if (isNotPositive(bigDecimal)) {
             return false;
         }
-        if (isNotTimes(bigDecimal,ParamConstant.MIN_PART_SIZE_CHANGE)) {
+        if (isNotTimes(bigDecimal, ParamConstant.MIN_PART_SIZE_CHANGE)) {
             return false;
         }
         return true;
-    
+        
     }
     
-    private static boolean isNotTimes(BigDecimal param , BigDecimal minChange) {
+    public static boolean validIp(BigDecimal ip) {
+        if (isNotBetween(ip, ParamConstant.MAX_IP, ParamConstant.MIN_IP)) {
+            return false;
+        }
+        if (isNotTimes(ip, ParamConstant.MIN_IP_CHANGE)) {
+            return false;
+        }
+        return true;
+    }
+    
+    private static boolean isNotTimes(BigDecimal param, BigDecimal minChange) {
         BigDecimal[] bigDecimals = param.divideAndRemainder(minChange);
         BigDecimal bigDecimal = bigDecimals[1];
         if (bigDecimal.compareTo(zero) != 0) {
@@ -73,10 +83,10 @@ public class ParamValidUtil {
     }
     
     private static boolean isNotBetween(BigDecimal param, BigDecimal max, BigDecimal min) {
-        if (param.compareTo(max)==1){
+        if (param.compareTo(max) == 1) {
             return true;
         }
-        if (param.compareTo(min)==-1){
+        if (param.compareTo(min) == -1) {
             return true;
         }
         return false;
@@ -84,14 +94,11 @@ public class ParamValidUtil {
     
     private static boolean isNotPositive(BigDecimal bigDecimal) {
         
-        if(bigDecimal.compareTo(zero)==1){
+        if (bigDecimal.compareTo(zero) == 1) {
             return false;
         }
         return true;
     }
     
-    public static boolean validIp() {
-        //TODO
-        return false;
-    }
+    
 }

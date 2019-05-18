@@ -106,7 +106,7 @@ new FormModel {
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 				"$layoutConstraints": "hidemode 3"
 				"$columnConstraints": "[150:150,fill][100:100,fill][100:100,fill][150:150,fill][100:100,fill]"
-				"$rowConstraints": "[][][][][][]"
+				"$rowConstraints": "[][][][][][][][][][]"
 			} ) {
 				name: "输出"
 				add( new FormComponent( "javax.swing.JLabel" ) {
@@ -204,12 +204,45 @@ new FormModel {
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 4 5"
 				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "推荐脉宽（us）"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 6"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "ton"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 6"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label15"
+					"text": "推荐脉间距（us）"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 3 6"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "toff"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 4 6"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label16"
+					"text": "推荐峰值电流（A）"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 7"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "ip"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 7"
+				} )
 			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 				"value": "cell 0 2"
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 690, 480 )
+			"size": new java.awt.Dimension( 690, 535 )
 		} )
 	}
 }
