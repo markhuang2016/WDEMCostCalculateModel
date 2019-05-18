@@ -22,7 +22,7 @@ public class CostCalculateUtil {
     
     
     public static CalculateResult calculate(CalculateInput calculateInput) {
-        
+        totalCost = ParamConstant.zero;
         //未判断材料
         BigDecimal requestRa = new BigDecimal(calculateInput.getRequestRa());
         BigDecimal height = new BigDecimal(calculateInput.getHeight());
