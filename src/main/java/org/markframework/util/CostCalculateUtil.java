@@ -45,7 +45,8 @@ public class CostCalculateUtil {
             if (ParamValidUtil.validIp(ip)) {
                 
                 // 如果有效则遍历所有有效toff
-                for (toff = ParamConstant.MIN_TOFF; toff.compareTo(ParamConstant.MAX_TOFF) != 1; toff = toff.add(ParamConstant.MIN_TOFF_CHANGE)) {
+                for (toff = ParamConstant.MIN_TOFF; toff.compareTo(ParamConstant.MAX_TOFF) != 1;
+                     toff = toff.add(ParamConstant.MIN_TOFF_CHANGE)) {
                     // 计算总成本并保留最小成本
                     calculateTotalCost(ton, toff, ip, height, length,preparedTime,emptyWalkTime);
                     

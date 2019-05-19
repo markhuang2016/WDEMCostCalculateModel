@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ae5382c-f596-4112-ba30-b702e98d8222" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/markframework/util/CostCalculateUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/markframework/util/CostCalculateUtilTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,12 +47,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="7250" />
+          <entry key="java" value="7251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7250" />
+          <entry key="JAVA" value="7251" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -63,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="1538">
               <caret line="156" selection-start-line="156" selection-end-line="156" />
               <folding>
                 <marker date="1558188330152" expanded="true" signature="7323:8816" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="608">
+              <caret line="73" column="31" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="73" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -247,101 +247,6 @@
               <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
               <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-              <item name="Pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WDEMCostCalculateModel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WDEMCostCalculateModel" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="markframework" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,7 +269,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/admin/IdeaProjects/WDEMCostCalculateModel/src/main/java/org/markframework/GUI/LoaderExample.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558194034927" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558232454212" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -512,7 +417,7 @@
       <workItem from="1557736801253" duration="2750000" />
       <workItem from="1557826626090" duration="367000" />
       <workItem from="1557827035095" duration="29395000" />
-      <workItem from="1558063251488" duration="31455000" />
+      <workItem from="1558063251488" duration="33327000" />
     </task>
     <servers />
   </component>
@@ -549,7 +454,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65831000" />
+    <option name="totallyTimeSpent" value="67703000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,12 +479,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.18674698" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37349397" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37349397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.0746988" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
@@ -971,17 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/markframework/util/CostCalculateUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1019,9 +913,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/Starter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/GUI/Communicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="1538">
           <caret line="156" selection-start-line="156" selection-end-line="156" />
           <folding>
             <marker date="1558188330152" expanded="true" signature="7323:8816" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
@@ -1032,8 +937,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/markframework/util/CostCalculateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="608">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="73" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
