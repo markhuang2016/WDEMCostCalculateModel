@@ -16,8 +16,16 @@ public class CostCalculateUtil {
     private static BigDecimal toff_min = ParamConstant.zero;
     private static BigDecimal ip_min = ParamConstant.zero;
     private static BigDecimal totalCost = ParamConstant.zero;
-    private static final BigDecimal kt = new BigDecimal("94.744");
-    private static final BigDecimal ke = new BigDecimal("0.869");
+    /**
+     * 时间成本参数，94.744/h
+     * 0.02632/s
+     */
+    private static final BigDecimal kt = new BigDecimal("0.02632");
+    /**
+     * 能源成本参数，0869/kwh
+     * 0。00000024139
+     */
+    private static final BigDecimal ke = new BigDecimal("0.00000024139");
     
     
     

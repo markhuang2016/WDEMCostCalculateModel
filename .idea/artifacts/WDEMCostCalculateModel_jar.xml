@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WDEMCostCalculateModel:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="WDEMCostCalculateModel.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Desktop/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="WDEMCostCalculateModel" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfd-loader.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/beansbinding.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/TableLayout.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/swing-layout.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfd-loader-src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-forms.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfd-annotations.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-common.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/TableLayout-src.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/beansbinding-doc.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/beansbinding-src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/swing-layout-src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/intellij_forms_rt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfd-loader-javadoc.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/TableLayout-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/swing-layout-javadoc.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/intellij_forms_rt_src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-forms-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-forms-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-core-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-core-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfd-annotations-javadoc.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-common-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-common-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-swing-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-swing-sources.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
